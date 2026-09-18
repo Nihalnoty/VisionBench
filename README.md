@@ -52,3 +52,28 @@ toothbrush
 transistor
 wood
 zipper
+
+## Benchmark Results
+
+The benchmark compares eight vision/anomaly-detection baselines and a score-fusion approach across the MVTec AD dataset.
+
+![VisionBench Mean AUROC Comparison](results/final_benchmark_comparison.png)
+
+The benchmark results are also available in:
+
+`results/final_benchmark_results.csv`
+
+### Mean AUROC
+
+| Method | Mean AUROC |
+|---|---:|
+| PatchCore | 0.9286 |
+| PaDiM | 0.9008 |
+| Baseline 9 Fusion | 0.8682 |
+| ViT-B/16 | 0.8175 |
+| ConvNeXt-Tiny | 0.8062 |
+| ResNet50 | 0.7758 |
+| ResNet18 | 0.7653 |
+| FastFlow | 0.7196 |
+
+> Note: FastFlow and the DRAEM-style training experiment were conducted as limited experimental runs rather than fully optimized training studies. The reported benchmark values should therefore be interpreted in the context of the implemented configurations and compute constraints.
